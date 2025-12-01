@@ -54,6 +54,61 @@ Words are stored in markdown files with the following format:
 - Get feedback on your expressions
 - Learn more natural ways to say things
 - Save conversation logs for review
+- Voice conversation support with VoiceMode MCP
+
+## Voice Mode Setup (Optional)
+
+This plugin supports voice conversations using [VoiceMode MCP](https://github.com/mbailey/voicemode). You can use either cloud (OpenAI) or fully local processing.
+
+### Prerequisites
+
+Install uv (Python package manager):
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+### Option 1: Cloud (OpenAI API)
+
+```bash
+export OPENAI_API_KEY=your-openai-key
+```
+
+### Option 2: Fully Local (Recommended for Privacy)
+
+Use [whisper.cpp](https://github.com/ggerganov/whisper.cpp) for speech-to-text and [Kokoro-FastAPI](https://github.com/remsky/Kokoro-FastAPI) for text-to-speech.
+
+#### Install Local Services
+
+```bash
+# Install whisper.cpp (speech-to-text)
+uvx voice-mode whisper install
+
+# Install Kokoro (text-to-speech)
+uvx voice-mode kokoro install
+```
+
+GPU acceleration is auto-detected:
+- **Apple Silicon**: Metal
+- **NVIDIA**: CUDA
+- **CPU**: Optimized builds
+
+#### Run Services via Docker (Alternative)
+
+```bash
+# Kokoro TTS - CPU
+docker run -p 8880:8880 ghcr.io/remsky/kokoro-fastapi-cpu:latest
+
+# Kokoro TTS - NVIDIA GPU
+docker run --gpus all -p 8880:8880 ghcr.io/remsky/kokoro-fastapi-gpu:latest
+```
+
+### Start Voice Conversation
+
+```bash
+claude converse
+```
+
+Or use `/evt:rollplay start` for guided English conversation practice with voice.
 
 ## License
 
