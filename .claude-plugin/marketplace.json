@@ -1,49 +1,19 @@
 {
-  "name": "english-vocabulary-trainer",
-  "displayName": "English Vocabulary Trainer",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "english-vocabulary-trainer-marketplace",
   "version": "1.0.0",
-  "description": "English vocabulary learning plugin for Claude Code. Manage words, practice with quizzes, and roleplay conversations.",
-  "author": "tanamura",
-  "license": "MIT",
-  "repository": "https://github.com/namtoki/english-vocabulary-trainer",
-  "homepage": "https://github.com/namtoki/english-vocabulary-trainer#readme",
-  "keywords": [
-    "english",
-    "vocabulary",
-    "learning",
-    "flashcards",
-    "anki",
-    "roleplay",
-    "language"
-  ],
-  "categories": [
-    "education",
-    "productivity"
-  ],
-  "commands": [
+  "description": "English vocabulary learning plugins for Claude Code",
+  "owner": {
+    "name": "namtoki",
+    "url": "https://github.com/namtoki"
+  },
+  "plugins": [
     {
-      "name": "words",
-      "description": "Add vocabulary words from word lists or specific words"
-    },
-    {
-      "name": "cliche",
-      "description": "Add fixed expressions and common phrases"
-    },
-    {
-      "name": "framework",
-      "description": "Add sentence framework patterns"
-    },
-    {
-      "name": "anki",
-      "description": "Start a flashcard-style vocabulary quiz"
-    },
-    {
-      "name": "rollplay",
-      "description": "Practice English conversation with roleplay"
+      "name": "english-vocabulary-trainer",
+      "description": "Manage words, practice with quizzes, and roleplay conversations",
+      "source": ".",
+      "category": "education",
+      "tags": ["english", "vocabulary", "learning", "flashcards", "anki", "roleplay"]
     }
-  ],
-  "mcpServers": [
-    "sequential-thinking"
-  ],
-  "minimumClaudeCodeVersion": "1.0.0"
+  ]
 }
