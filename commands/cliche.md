@@ -1,4 +1,4 @@
-# /cliche コマンド
+# /evt:cliche コマンド
 
 引数: $ARGUMENTS
 
@@ -32,19 +32,9 @@
 2. 存在する場合: その行をコンソールに表示するのみ
 3. 存在しない場合: `words/cliche.md` に追加
 
-### 3. 書き込みフォーマット
+### 3. 書き込み
 
-H2 セクションで分類し、各行に以下の情報を記載:
-```md
-## Greetings
-- `Good morning.`                   ([Formal] おはようございます)     Good morning, everyone.
-- `How's it going?`                 ([Casual] 調子どう?)              Hey, how's it going?
-- `Nice to meet you.`               ([Neutral] はじめまして)          Nice to meet you, Mr. Smith.
-
-## Gratitude
-- `Thank you so much.`              ([Neutral] 本当にありがとう)       Thank you so much for your help.
-- `I really appreciate it.`         ([Formal] 本当に感謝します)        I really appreciate your support.
-```
+`word-format` スキルに従って、`words/cliche.md` に追加してください。
 
 ### 4. YouTube動画検索 (共通処理)
 

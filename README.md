@@ -12,35 +12,13 @@ Claude Code Plugin for English vocabulary learning. Manage words, practice with 
 
 | Command | Description |
 |---------|-------------|
-| `/words [n\|word]` | Add vocabulary words (by count or specific word) |
-| `/cliche [n\|phrase]` | Add cliche/fixed expressions |
-| `/framework [n\|pattern]` | Add sentence framework patterns |
-| `/anki [n]` | Start a flashcard quiz with n questions |
-| `/rollplay start` | Start an English conversation roleplay |
-| `/rollplay end` | End roleplay and save conversation log |
+| `/evt:words [n\|word]` | Add vocabulary words (by count or specific word) |
+| `/evt:cliche [n\|phrase]` | Add cliche/fixed expressions |
+| `/evt:framework [n\|pattern]` | Add sentence framework patterns |
+| `/evt:anki [n]` | Start a flashcard quiz with n questions |
+| `/evt:rollplay start` | Start an English conversation roleplay |
+| `/evt:rollplay end` | End roleplay and save conversation log |
 
-## Directory Structure
-
-```
-english-vocabulary-trainer/
-├── .claude-plugin/
-│   └── plugin.json
-├── commands/
-│   ├── words.md
-│   ├── cliche.md
-│   ├── framework.md
-│   ├── anki.md
-│   └── rollplay.md
-├── words/
-│   ├── 02_verb/
-│   ├── 03_adjective_noun/
-│   ├── 04_adverb/
-│   ├── cliche.md
-│   └── framework.md
-├── rollplay/
-├── CLAUDE.md
-└── README.md
-```
 
 ## Word Format
 
@@ -60,18 +38,18 @@ Words are stored in markdown files with the following format:
 
 ## Features
 
-### Vocabulary Management (`/words`, `/cliche`, `/framework`)
+### Vocabulary Management (`/evt:words`, `/evt:cliche`, `/evt:framework`)
 - Add words from major word lists (NGSL, GSL, AWL, COCA, SVL 12000)
 - Categorize by part of speech and semantic field
 - Include pronunciation, register, meaning, and example sentences
 - Search YouGlish for real-world usage videos
 
-### Flashcard Quiz (`/anki`)
+### Flashcard Quiz (`/evt:anki`)
 - Random selection from your vocabulary
 - Interactive quiz format with reveal
 - Track which file each word came from
 
-### Conversation Roleplay (`/rollplay`)
+### Conversation Roleplay (`/evt:rollplay`)
 - Practice speaking with current news topics
 - Get feedback on your expressions
 - Learn more natural ways to say things

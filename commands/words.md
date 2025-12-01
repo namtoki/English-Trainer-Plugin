@@ -1,4 +1,4 @@
-# /words コマンド
+# /evt:words コマンド
 
 引数: $ARGUMENTS
 
@@ -32,51 +32,11 @@
 2. 存在する場合: その行をコンソールに表示するのみ
 3. 存在しない場合: 適切なファイルに追加
 
-### 3. 書き込みフォーマット
+### 3. 書き込み
 
-H2 セクションで分類し、各行に以下の情報を記載:
-```md
-## Sound Action
-- `shout` /ʃaʊt/                    ([Neutral] 叫ぶ、大声で言う)    He shouted across the street.
-  - `yell` /jel/                    ([Casual] 叫ぶ、怒鳴る)         The coach yelled at the players.
-  - `scream` /skriːm/               ([Neutral] 叫ぶ、悲鳴を上げる)  He screamed for help.
-```
+`word-format` スキルに従って、適切なファイルに追加してください。
 
-### 4. 書き込み先ファイル一覧
-
-動詞:
-- `words/02_verb/0_AUX.md` - 助動詞のような働きの動詞
-- `words/02_verb/1_SVC.md` - SVC 文型の動詞
-- `words/02_verb/2_SVOC.md` - SVOC 文型の動詞
-- `words/02_verb/3_SVOO.md` - SVOO 文型の動詞
-- `words/02_verb/4_Opinion.md` - 考えを述べる際に使用する表現 (SV, SVO)
-- `words/02_verb/5_Cognitive.md` - 認識を説明する時に使用する表現 (SV, SVO)
-- `words/02_verb/6_Task.md` - タスク管理関連の表現 (SV, SVO)
-- `words/02_verb/7_Description.md` - 何かを説明する時に使える表現 (SV, SVO)
-- `words/02_verb/8_Common.md` - その他の表現 (SV, SVO)
-
-形容詞・名詞:
-- `words/03_adjective_noun/0_Hedge.md` - ぼやけさせる名詞、形容詞
-- `words/03_adjective_noun/1_Business.md` - 仕事でよく使う名詞、形容詞
-- `words/03_adjective_noun/2_Politics_Religion.md` - 政治、宗教関連
-- `words/03_adjective_noun/3_Law_Crime.md` - 法律、犯罪関連
-- `words/03_adjective_noun/4_Education.md` - 教育、学術関連
-- `words/03_adjective_noun/5_Science.md` - 科学関連
-- `words/03_adjective_noun/6_Community.md` - 金融、不動産などの公共関連
-- `words/03_adjective_noun/7_Health.md` - 病院、健康、医療関連
-- `words/03_adjective_noun/8_Life.md` - 日常関連
-- `words/03_adjective_noun/9_Assessment.md` - 客観的な評価を表現する名詞、形容詞
-
-副詞:
-- `words/04_adverb/0_Conjunction.md` - 接続副詞
-- `words/04_adverb/1_Reason.md` - 理由、目的の副詞
-- `words/04_adverb/2_How.md` - 「どのように」を説明する副詞
-- `words/04_adverb/3_Condition.md` - 条件を表す副詞
-- `words/04_adverb/4_Concession.md` - 譲歩を表す副詞
-- `words/04_adverb/5_Feeling.md` - 主観による情報を補足する副詞
-- `words/04_adverb/6_When_Where.md` - 時間、場所を補足する副詞
-
-### 5. YouGlish で実例動画を検索 (共通処理)
+### 4. YouGlish で実例動画を検索 (共通処理)
 
 追加した単語/表現について、YouGlish のリンクをコンソールに出力してください:
 - URL形式: `https://youglish.com/pronounce/{単語}/english`

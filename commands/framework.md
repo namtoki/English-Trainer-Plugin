@@ -1,4 +1,4 @@
-# /framework コマンド
+# /evt:framework コマンド
 
 引数: $ARGUMENTS
 
@@ -34,22 +34,9 @@
 2. 存在する場合: その行をコンソールに表示するのみ
 3. 存在しない場合: `words/framework.md` に追加
 
-### 3. 書き込みフォーマット
+### 3. 書き込み
 
-H2 セクションで分類し、各行に以下の情報を記載:
-```md
-## Reason & Explanation
-- `S V in the sense that S V`       ([Formal] SがVするという意味で)   It's correct in the sense that it follows the rules.
-- `The reason why S V is that S V`  ([Neutral] SがVする理由は...)      The reason why I'm late is that I missed the train.
-
-## Contrast
-- `On the one hand S V, on the other hand S V`  ([Formal] 一方では...他方では)  On the one hand it's expensive, on the other hand it's high quality.
-- `While S V, S V`                  ([Neutral] ...する一方で)          While I agree with the idea, I have some concerns.
-
-## Addition
-- `In addition to N, S V`           ([Formal] Nに加えて)               In addition to English, she speaks French.
-- `Not only S V but also S V`       ([Neutral] ...だけでなく...も)      Not only did he apologize but also offered compensation.
-```
+`word-format` スキルに従って、`words/framework.md` に追加してください。
 
 ### 4. YouTube動画検索 (共通処理)
 
